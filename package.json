@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
+    "deploy": "ng serve --host 0.0.0.0 --disable-host-check --open",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
