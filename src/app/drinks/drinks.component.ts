@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DrinkListService } from "../service/drink-list/drink-list.service";
+import { Drink } from '../model/drink';
 
 @Component({
   selector: 'app-drinks',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DrinksComponent implements OnInit {
 
-  constructor() { }
+  public drinks: Drink[];
+
+  constructor(private drinkListService: DrinkListService) { }
 
   ngOnInit() {
+    this.drinks = this.drinkListService.getDrinks(); 
   }
 
 }
