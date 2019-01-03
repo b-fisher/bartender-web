@@ -2,12 +2,12 @@ import { Injectable } from '@angular/core';
 import { Drink } from '../../model/drink';
 
 const DRINKS: Drink[] = [
-  { id: 1, name: 'Whiskey Sour' },
-  { id: 2, name: 'Manhattan' },
-  { id: 3, name: 'Bourbon Sidecar'},
-  { id: 4, name: 'Dark and Stormy' },
-  { id: 5, name: 'Old Fashioned' }
-]
+  new Drink('Whiskey Sour', 1),
+  new Drink('Manhattan', 2),
+  new Drink('Bourbon Sidecar', 3),
+  new Drink('Dark and Stormy', 4),
+  new Drink('Old Fashioned', 5)
+];
 
 @Injectable({
   providedIn: 'root'
