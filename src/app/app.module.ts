@@ -4,14 +4,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCheckboxModule, MatCardModule } from '@angular/material';
 import { AppComponent } from './app.component';
-import { DrinksComponent } from './drinks/drinks.component';
+import { DrinkListComponent } from './drink-list/drink-list.component';
 import { DrinkDetailsComponent } from './drink-details/drink-details.component';
 import { BartenderComponent } from './bartender/bartender.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DrinksComponent,
+    DrinkListComponent,
     DrinkDetailsComponent,
     BartenderComponent
   ],

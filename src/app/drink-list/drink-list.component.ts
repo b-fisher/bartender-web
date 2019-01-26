@@ -3,11 +3,11 @@ import { DrinkListService } from '../service/drink-list/drink-list.service';
 import { Drink } from '../model/drink';
 
 @Component({
-  selector: 'drinks',
-  templateUrl: './drinks.component.html',
-  styleUrls: ['./drinks.component.scss']
+  selector: 'drink-list',
+  templateUrl: './drink-list.component.html',
+  styleUrls: ['./drink-list.component.scss']
 })
-export class DrinksComponent implements OnInit {
+export class DrinkListComponent implements OnInit {
 
   public drinks: Drink[];
 
