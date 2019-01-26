@@ -3,7 +3,7 @@ import { DrinkListService } from '../service/drink-list/drink-list.service';
 import { Drink } from '../model/drink';
 
 @Component({
-  selector: 'app-drinks',
+  selector: 'drinks',
   templateUrl: './drinks.component.html',
   styleUrls: ['./drinks.component.scss']
 })
