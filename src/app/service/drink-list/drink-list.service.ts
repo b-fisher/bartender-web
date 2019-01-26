@@ -8,7 +8,7 @@ const DRINKS: Observable<Drink[]> = of([
   new Drink('Bourbon Sidecar', 3),
   new Drink('Dark and Stormy', 4),
   new Drink('Old Fashioned', 5)]
-)
+);
 
 @Injectable({
   providedIn: 'root'
