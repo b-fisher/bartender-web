@@ -6,14 +6,12 @@ import { MatButtonModule, MatCheckboxModule, MatCardModule } from '@angular/mate
 import { AppComponent } from './app.component';
 import { DrinkListComponent } from './drink-list/drink-list.component';
 import { DrinkDetailsComponent } from './drink-details/drink-details.component';
-import { BartenderComponent } from './bartender/bartender.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DrinkListComponent,
-    DrinkDetailsComponent,
-    BartenderComponent
+    DrinkDetailsComponent
   ],
   imports: [
     BrowserModule,

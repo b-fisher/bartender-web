@@ -1,5 +1,7 @@
 <div>
   <div *ngFor="let drink of drinks" class="drink-card">
-    <mat-card>{{drink.name}}</mat-card>
+    <nav>
+        <mat-card routerLink="/drink/{{drink.id}}">{{drink.name}}</mat-card>
+    </nav>
   </div>
 </div>
