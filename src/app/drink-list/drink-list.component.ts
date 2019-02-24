@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DrinkListService } from '../service/drink-list/drink-list.service';
-import { Drink } from '../model/drink';
+import { BasicDrink } from '../model/basic-drink';
 
 @Component({
   selector: 'drink-list',
@@ -9,13 +9,13 @@ import { Drink } from '../model/drink';
 })
 export class DrinkListComponent implements OnInit {
 
-  public drinks: Drink[];
+  public drinks: BasicDrink[];
 
   constructor(private drinkListService: DrinkListService) { }
 
   ngOnInit() {
       this.drinkListService.getDrinks()
-        .subscribe((drinks: Drink[]) => this.drinks = drinks);
+        .subscribe((drinks: BasicDrink[]) => this.drinks = drinks);
   }
 
 }
