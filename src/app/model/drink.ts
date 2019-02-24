@@ -1,9 +1,4 @@
-export class Drink {
-    constructor(private _name: string, private _id?: number) { }
-    get id(): number {
-        return this._id;
-    }
-    get name(): string {
-        return this._name;
-    }
+import { BasicDrink } from './basic-drink';
+
+export class Drink extends BasicDrink {
 }
